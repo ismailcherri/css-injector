@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains css_injector.module.
+ */
+
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function css_injector_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the css_injector module.
+    case 'help.page.css_injector':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A module to inject CSS directly into HTML') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_bottom().
+ * @param array $page_bottom
+ */
+function css_injector_page_bottom(array &$page_bottom)
+{
+  $settings = \Drupal::config('css_injector.settings');
+  $css = $settings->get('css');
+  if (empty($css)) {
+    return;
+  }
+
+  $page_bottom['css_injector'] = [
+    [
+      '#type' => 'html_tag',
+      '#tag' => 'style',
+      '#value' => Markup::create($css),
+    ],
+  ];
+}

@@ -1,0 +1,7 @@
+css_injector.css_injector_config_form:
+  title: 'CSS Injector Settings'
+  route_name: css_injector.css_injector_config_form
+  description: 'Manage CSS Injector settings'
+  parent: system.admin_config_ui
+  weight: 99
+

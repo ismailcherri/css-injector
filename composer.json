@@ -1,0 +1,14 @@
+{
+  "name": "drupal/css_injector",
+  "type": "drupal-module",
+  "description": "A module to inject CSS directly into HTML",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/css_injector",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/css_injector",
+    "source": "http://cgit.drupalcode.org/css_injector"
+  },
+  "require": { }
+}

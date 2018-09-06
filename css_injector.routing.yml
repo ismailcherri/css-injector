@@ -1,0 +1,11 @@
+
+css_injector.css_injector_config_form:
+  path: '/admin/config/css_injector/css_injector_config'
+  defaults:
+    _form: '\Drupal\css_injector\Form\CSSInjectorConfigForm'
+    _title: 'CSSInjectorConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

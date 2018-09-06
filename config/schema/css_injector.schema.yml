@@ -1,0 +1,7 @@
+css_injector.settings:
+  type: mapping
+  label: 'CSS Injector settings'
+  mapping:
+    css:
+      type: text
+      label: 'CSS code'

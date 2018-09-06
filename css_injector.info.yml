@@ -1,0 +1,5 @@
+name: 'CSS Injector'
+type: module
+description: 'A module to inject CSS directly into HTML'
+core: 8.x
+package: 'Custom'
