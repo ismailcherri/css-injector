@@ -13,7 +13,3 @@ Usage
 - Visit /admin/config/css_injector/css_injector_config
 - Add your CSS rules
 - Click Save configuration
-
-Author/Maintainer
-======================
-- Ismail Cherri <ismailcherri at gmail dot com>
